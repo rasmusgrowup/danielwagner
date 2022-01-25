@@ -1,0 +1,53 @@
+@import 'sizes.scss';
+
+.excerpt {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 4rem auto 0;
+  padding: 3vw;
+  width: 64vw;
+
+  @media (max-width: $l) {
+    display: block;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+}
+
+.figure {
+  flex: 2;
+  margin-bottom: 1rem;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    @media (max-width: $l) {
+      flex-direction: column-reverse;
+      text-align: left;
+    }
+  }
+
+  figure figcaption {
+    font-size: max(1rem, 1.2vw);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.text {
+  flex: 1;
+  font-size: 1rem;
+  text-align: right;
+
+  @media (max-width: $l) {
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+    padding-right: 1rem;
+  }
+}

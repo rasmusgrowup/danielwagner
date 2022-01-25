@@ -1,0 +1,35 @@
+@import 'sizes.scss';
+
+.quote {
+  margin: 0 auto 2rem;
+  padding: 3vw;
+  width: 64vw;
+
+  @media (max-width: $l) {
+    margin: 0 auto 4rem;
+    width: 100%;
+  }
+}
+
+.text {
+  font-size: max(1.9em, 2.85vw);
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.credits {
+  align-items: center;
+  display: flex;
+  font-size: max(1em, 1.2vw);
+
+  &::before {
+    background-color: var(--white);
+    content: '';
+    height: 1px;
+    margin-right: 1rem;
+    width: 40px;
+  }
+}

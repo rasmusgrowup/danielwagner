@@ -1,0 +1,55 @@
+@import 'sizes.scss';
+
+.container {
+  margin: 0 auto;
+  padding: 3vw;
+  width: 64vw;
+
+  @media (max-width: $l) {
+    width: 100%;
+  }
+}
+
+.teaser {
+  align-items: center;
+  display: flex;
+  font-size: max(1em, 1.2vw);
+
+  &::before {
+    background-color: var(--white);
+    content: '';
+    height: 1px;
+    margin-right: 1rem;
+    width: 40px;
+  }
+}
+
+.about {
+  max-width: 25vw;
+
+  @media (max-width: $l) {
+    max-width: none;
+  }
+}
+
+.list {
+  font-size: max(2rem, 4vw);
+  font-weight: bold;
+  margin-top: 4rem;
+  text-transform: uppercase;
+
+  .link {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    line-height: 1;
+    justify-content: space-between;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .link:hover {
+    color: blue;
+  }
+}

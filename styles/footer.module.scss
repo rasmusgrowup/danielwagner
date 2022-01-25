@@ -1,0 +1,29 @@
+@import 'sizes.scss';
+
+.main {
+  margin: 4rem auto 8rem;
+  text-align: center;
+}
+
+.sponsors {
+  margin: 2rem auto;
+  max-width: 36vw;
+  padding: 0 3vw;
+  width: 100%;
+
+  @media (max-width: $l) {
+    max-width: none;
+  }
+}
+
+.bottom {
+  font-size: max(0.9em, 0.9vw);
+}
+
+.bottom a {
+  color: var(--blue);
+
+  &:hover {
+    color: var(--white);
+  }
+}

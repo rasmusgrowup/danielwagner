@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
             <link rel="stylesheet" href="https://use.typekit.net/hok4euk.css" />
         </Head>
-        <body>
+        <body id='body'>
           <Main />
           <NextScript />
         </body>

@@ -53,7 +53,7 @@ export default function Header() {
                 <Link href='/'><a className={router.pathname == '/' ? `${header.active}` : ''}>Foredrag</a></Link>
               </li>
               <li>
-                <Link href='/'><a className={router.pathname == '/bio' ? `${header.active}` : ''}>Bio</a></Link>
+                <Link href='/bio'><a className={router.pathname == '/bio' ? `${header.active}` : ''}>Bio</a></Link>
               </li>
             </ul>
           </nav>
