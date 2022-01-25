@@ -22,7 +22,7 @@ export default function Home() {
       <section className={index.excerpt}>
         <div className={index.figure}>
           <figure>
-            <Image src={Dubai} width='900' height='720' objectFit='cover' objectPosition='100'/>
+            <Image src={Dubai} width='900' height='720' objectFit='cover' objectPosition='100' placeholder='blur'/>
             <figcaption>2019 Dubai World Para Athletics</figcaption>
           </figure>
         </div>

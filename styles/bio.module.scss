@@ -1,0 +1,224 @@
+@import 'sizes.scss';
+
+.biography {
+  margin: 4rem auto 0;
+  padding: 3vw;
+  position: relative;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 72vw;
+
+  @media (max-width: $l) {
+    max-width: 100%;
+  }
+}
+
+.teaser {
+  align-items: center;
+  display: flex;
+  font-size: clamp(1rem, 1.25vw, 3rem);
+  margin-bottom: 1vw;
+
+  @media (min-width: $l) {
+    left: 3vw;
+    position: absolute;
+    top: 3vw;
+  }
+
+  @media (max-width: $l) {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    background-color: var(--white);
+    content: '';
+    height: 1px;
+    margin-right: 1rem;
+    width: 40px;
+  }
+}
+
+.ulykke,
+.ossur,
+.world {
+  display: flex;
+  margin: 0 auto 4rem;
+  max-width: 50vw;
+
+  @media (max-width: $l) {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.ulykkeInner,
+.ossurInner,
+.worldInner {
+  flex: 3;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $l) {
+      flex-direction: column-reverse;
+      margin-bottom: 1rem;
+    }
+
+    figcaption {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.ulykkeText,
+.ossurText,
+.worldText {
+  flex: 2;
+
+  p {
+    margin: 0;
+    padding-left: 1rem;
+
+    @media (max-width: $l) {
+      padding-left: 0;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.ulykke {
+  margin: 0 auto 12rem;
+
+  @media (max-width: $l) {
+    margin-bottom: 6rem;
+  }
+}
+
+.ossur {
+  margin: 0 auto 12rem 0;
+
+  @media (max-width: $l) {
+    margin-bottom: 6rem;
+  }
+}
+
+.world {
+  margin: 0 0 4rem auto;
+
+  @media (max-width: $l) {
+    margin-bottom: 6rem;
+  }
+}
+
+.world .worldText {
+  padding-left: 0;
+  padding-right: 1rem;
+  text-align: right;
+
+  @media (max-width: $l) {
+    padding-right: 0;
+  }
+
+  p {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $l) {
+  .world {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .worldText {
+      text-align: left;
+    }
+  }
+}
+
+.achievements {
+  margin: 0 auto 2rem;
+  padding: 3vw;
+  width: 64vw;
+
+  @media (max-width: $l) {
+    margin: 0 auto 4rem;
+    width: 100%;
+  }
+}
+
+.list .li {
+  border-bottom: 1px solid var(--light);
+  display: flex;
+  justify-content: space-between;
+  font-size: max(0.8em, 1.25vw);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+
+  .year {
+    flex: 1;
+  }
+
+  .length {
+    flex: 2;
+  }
+
+  .record,
+  .where {
+    flex: 3;
+  }
+}
+
+.length {
+  opacity: 0.25;
+}
+
+.where {
+  text-align: right;
+}
+
+.video {
+  display: flex;
+  margin: 0 auto 2rem;
+  padding: 3vw;
+  width: 64vw;
+
+  @media (max-width: $l) {
+    display: block;
+    margin: 0 auto 4rem;
+    width: 100%;
+  }
+
+  .videoInner {
+    flex: 2;
+
+    @media (max-width: $l) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .videoText {
+    flex: 1;
+
+    p {
+      margin: 0;
+      padding-left: 1rem;
+
+      @media (max-width: $l) {
+        margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

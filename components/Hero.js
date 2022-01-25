@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import hero from '../styles/hero.module.scss'
 import React, { useRef, useState, useEffect } from 'react'
 import { gsap } from 'gsap';
@@ -7,16 +8,32 @@ export default function Hero({ src, fit, position, teaser, title, text, secondTe
   const parallaxRef = useRef(null);
   const heroRef = useRef(null);
   const contentRef = useRef(null);
+  const bookRef = useRef(null);
   const a = gsap.utils.selector(contentRef);
 
   useEffect(() => {
-    gsap.from(parallaxRef.current, {
-      opacity: 0,
+    gsap.to(parallaxRef.current, {
+      opacity: 1,
       duration: .6,
     });
-    gsap.from(a('.child'), {
+    gsap.set(bookRef.current, {
       opacity: 0,
       y: 50,
+    });
+    gsap.to(bookRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      ease: 'Power3.easeInOut',
+    });
+    gsap.set(a('.child'), {
+      opacity: 0,
+      y: 50,
+    });
+    gsap.to(a('.child'), {
+      delay: 0.2,
+      opacity: 1,
+      y: 0,
       duration: 2,
       ease: 'Power3.easeInOut',
       stagger: 0.1,
@@ -26,7 +43,10 @@ export default function Hero({ src, fit, position, teaser, title, text, secondTe
     <>
       <section className={hero.container} ref={heroRef}>
         <div className={hero.parallax} ref={parallaxRef}>
-          <Image src={src} layout='fill' objectFit={fit} objectPosition={position} quality='100' priority='true'/>
+          <Image src={src} layout='fill' objectFit={fit} objectPosition={position} quality='100' priority='true' placeholder='blur'/>
+        </div>
+        <div className={hero.book} ref={bookRef}>
+          <Link href='mailto:booking@danielwagner.dk'><a>Book mit foredrag</a></Link>
         </div>
         <div className={hero.content} ref={contentRef}>
           <span className={`${hero.teaser} child`}>{teaser}</span>

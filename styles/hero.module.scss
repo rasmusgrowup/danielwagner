@@ -3,6 +3,7 @@
 .parallax {
   height: 60vw;
   position: relative;
+  opacity: 0;
 
   @media (max-width: $l) {
     height: 120vw;
@@ -27,6 +28,19 @@
   @media (max-width: $l) {
     max-width: 100%;
   }
+}
+
+@media (min-width: $l) {
+  .rightAligned .content {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.teaser,
+.title,
+.text {
+  opacity: 0;
 }
 
 .teaser {
@@ -62,4 +76,64 @@
 .text {
   font-size: max(18px, 1.375vw);
   margin-right: 1rem;
+}
+
+.book {
+  background-color: var(--white);
+  border-radius: 2rem;
+  bottom: 6vw;
+  color: var(--dark);
+  display: inline-block;
+  max-width: 150px;
+  padding: 1rem;
+  position: absolute;
+  right: 3vw;
+  text-align: center;
+  z-index: 9;
+
+  @media (max-width: $l) {
+    display: block;
+    left: 3vw;
+    margin-bottom: 8rem;
+    margin-top: -30vw;
+    position: relative;
+    right: auto;
+  }
+
+  @media (max-width: $s) {
+    margin-bottom: 6rem;
+  }
+}
+
+.contact {
+  bottom: 3vw;
+  opacity: 0;
+  padding: 3vw;
+  position: absolute;
+  z-index: 99;
+
+  @media (max-width: $l) {
+    margin-bottom: 8rem;
+    margin-top: -37vw;
+    position: relative;
+  }
+
+  @media (max-width: $s) {
+    margin-bottom: 6rem;
+  }
+
+  .link {
+    align-items: flex-start;
+    display: flex;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+
+    a {
+      margin-right: 0.25rem;
+    }
+
+    a:hover {
+      color: blue;
+    }
+  }
 }

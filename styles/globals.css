@@ -81,4 +81,5 @@ p {
   --dark: #000103;
   --ease: cubic-bezier(0.85, 0, 0.15, 1);
   --white: #fff;
+  --light: rgba(255, 255, 255, 0.2);
 }
