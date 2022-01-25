@@ -5,7 +5,7 @@ export default function Quote({ text, credits }) {
     <>
       <section className={quote.quote}>
         <p className={quote.text}>
-          "{text}"
+          {text}
         </p>
         <span className={quote.credits}>
           {credits}

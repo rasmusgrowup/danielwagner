@@ -59,7 +59,7 @@ export default function Bio() {
           </div>
         </div>
       </section>
-      <Quote text='Selvfølgelig vil jeg gerne have funktionaliten fra mit gamle ben tilbage, men jeg vil aldrig bytte det, for den person jeg er blevet, og de muligheder jeg har fået.' credits='Fra interview i P3 x viden' />
+      <Quote text='"Selvfølgelig vil jeg gerne have funktionaliten fra mit gamle ben tilbage, men jeg vil aldrig bytte det, for den person jeg er blevet, og de muligheder jeg har fået."' credits='Fra interview i P3 x viden' />
       <section className={bio.achievements}>
         <div className={bio.achievementsInner}>
           <ul className={bio.list}>
@@ -133,7 +133,7 @@ export default function Bio() {
           <p>Her sætter Daniel en ny personlig rekord i 100 meter sprint ved Dubai World Para Athletics i 2019. Der går et stykke tid før han opdager at han tilmed er kommet først i mål, og altså vinder guld til ham selv og Danmark.</p>
         </div>
       </section>
-      <Quote text='Jeg føler at jeg er lykkes og har rejst mig — kommet stærkere ud på den anden side. Og det synes jeg er smukt, når man har været ude for noget så tragisk, som at miste sit ben som 14-årig.' credits='Fra interview i P3 x viden' />
+      <Quote text='"Jeg føler at jeg er lykkes og har rejst mig — kommet stærkere ud på den anden side. Og det synes jeg er smukt, når man har været ude for noget så tragisk, som at miste sit ben som 14-årig."' credits='Fra interview i P3 x viden' />
     </>
   )
 }

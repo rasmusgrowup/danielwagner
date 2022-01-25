@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </section>
       <Quote
-        text='Grunden til at jeg er kommet langt inden for parasporten, er fordi jeg har været god til at bruge mit handicap, i stedet for at sætte det til side. I foredraget kan i opleve min kamp, mine aha-oplevelser og mine sejre.'
+        text='"Grunden til at jeg er kommet langt inden for parasporten, er fordi jeg har været god til at bruge mit handicap, i stedet for at sætte det til side. I foredraget kan i opleve min kamp, mine aha-oplevelser og mine sejre."'
         credits='Daniel Wagner'
       />
     </>
