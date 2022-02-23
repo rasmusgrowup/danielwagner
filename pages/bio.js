@@ -4,9 +4,10 @@ import Image from 'next/image'
 import Hero from '../components/HeroRight'
 import Quote from '../components/Quote'
 import Daniel from '../public/Daniel_wagner_spring.jpg'
-import Ulykke from '../public/Daniel_wager_ulykke.jpg'
-import Ossur from '../public/Daniel_wager_ossur.jpg'
-import Bydgoszcz from '../public/Daniel_wager_bydgoszcz.jpg'
+import Forward from '../public/Daniel_wagner_forward.jpg'
+import Ulykke from '../public/Daniel_wagner_ulykke_2.jpg'
+import Ossur from '../public/Daniel_wagner_ossur.jpg'
+import Bydgoszcz from '../public/Tokyo-paralympics.jpg'
 import bio from '../styles/bio.module.scss'
 
 export default function Bio() {
@@ -15,11 +16,11 @@ export default function Bio() {
       <Hero
         src={Daniel}
         fit='cover'
-        position='left'
-        teaser='Benamputeret topatlet'
-        title='Om Daniel'
-        text='Som 14-årig mister Daniel Wagner Jørgensen sit højre ben efter en trampolinulykke ved en gymnastikopvisning på efterskolen. Ulykken betyder at han i dag er benamputeret over knæet på højre ben — hvilket naturligvis har gjort det vanskeligere at forfølge drømmen om at være dansk topatlet.'
-        secondText='I dag kan han alligevel springe over 7 meter langt, og er et af de største medaljehåb ved de paralympiske lege. Daniel har set sin ulykke som en mulighed for genopfinde sig selv, og beviser, at man ved at udvise stor disciplin og viljestyrke, kan overkomme enhver udfordring.'
+        position='25% 15%'
+        teaser='Daniel Wagners biografi'
+        title='Om Daniel Wagner'
+        text='Daniel Wagner er en af verdens absolut bedste paraatleter. Han er gulvinder i både sprint og længdespring, og deltager i paraatletiske vedensmestreskaber verden over, samt de Paralympiske lege. En ulykke ved en gymnastikopvisning i 2008 i hans hjemby Vejle gjorde, at hans højre ben måtte amputeres, og idéen om at leve af sine sportslige færdigheder, måtte genovervejes.'
+        secondText='Daniel har med en vilje af stål og disciplin vendt sin modgang til medgang — og er blevet en inspiration for andre paraatleter. Daniel er med til at skubbe til grænsen for, hvad der er muligt at opnå som parasportsudøver. Med hans stålfasthed, er han med til at redefinere, hvordan vi opfatter samspillet mellem mennesket og protesen.'
       />
       <section className={bio.biography}>
         <span className={bio.teaser}>Biografi</span>
@@ -32,14 +33,14 @@ export default function Bio() {
               </figure>
             </div>
             <div className={bio.ulykkeText}>
-              <p>Daniel mister sit ben som 14-årig i en trampolinulykke på efterskolen. Blot tre uger efter at han fik fjernet sine sting, hoppede han tilbage på trampolinen og tog et modigt skridt fremad — en baglæns saltomortale på ét ben. Siden da har Daniel ikke set sig tilbage.</p>
+              <p>Daniel mister sit ben som 14-årig i en trampolinulykke ved en gymnastikopvisning i sin hjemby. Blot tre uger efter at han fik fjernet sine sting, hoppede han tilbage på trampolinen og tog et modigt skridt fremad — en baglæns saltomortale på ét ben. Siden da har Daniel ikke set sig tilbage.</p>
             </div>
           </div>
           <div className={bio.ossur}>
             <div className={bio.ossurInner}>
               <figure>
-                <Image src={Ossur} width='900' height='900' objectFit='cover' objectPosition='100' placeholder='blur'/>
-                <figcaption>Össur Athelitc Prosthetic®</figcaption>
+                <Image src={Ossur} width=' 900' height='900' objectFit='cover' objectPosition='100' placeholder='blur'/>
+                <figcaption>Össur Athletic Prosthetic®</figcaption>
               </figure>
             </div>
             <div className={bio.ossurText}>
@@ -52,8 +53,8 @@ export default function Bio() {
           </div>
             <div className={bio.worldInner}>
               <figure>
-                <Image src={Bydgoszcz} width='900' height='1352' objectFit='cover' objectPosition='100' placeholder='blur'/>
-                <figcaption>Bydgoszcz 2021 World Para Athletics </figcaption>
+                <Image src={Bydgoszcz} width='1000' height='1352' objectFit='cover' objectPosition='left top' placeholder='blur'/>
+                <figcaption>Tokyo 2020 Paralympics</figcaption>
               </figure>
             </div>
           </div>

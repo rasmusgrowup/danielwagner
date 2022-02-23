@@ -46,7 +46,7 @@ export default function Header() {
     <>
       <header className={header.header} ref={headerRef}>
         <div className={`${header.headerInner} ${navClassList.join(" ")}`}>
-          <div className={header.logo}><strong>Daniel Wagner</strong><span> — Olympisk Paraatlet</span></div>
+          <div className={header.logo}><strong>Daniel Wagner</strong><span> — Paralympisk Atlet</span></div>
           <nav className={header.nav}>
             <ul>
               <li>
