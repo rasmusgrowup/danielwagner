@@ -10,6 +10,8 @@ import Ossur from '../public/Daniel_wagner_ossur.jpg'
 import Bydgoszcz from '../public/Tokyo-paralympics.jpg'
 import bio from '../styles/bio.module.scss'
 
+import Achievements from '../components/Achievements'
+
 export default function Bio() {
   return (
     <>
@@ -17,10 +19,10 @@ export default function Bio() {
         src={Daniel}
         fit='cover'
         position='25% 15%'
-        teaser='Daniel Wagners biografi'
+        teaser='Bio'
         title='Om Daniel Wagner'
-        text='Daniel Wagner er en af verdens absolut bedste paraatleter. Han er gulvinder i både sprint og længdespring, og deltager i paraatletiske vedensmestreskaber verden over, samt de Paralympiske lege. En ulykke ved en gymnastikopvisning i 2008 i hans hjemby Vejle gjorde, at hans højre ben måtte amputeres, og idéen om at leve af sine sportslige færdigheder, måtte genovervejes.'
-        secondText='Daniel har med en vilje af stål og disciplin vendt sin modgang til medgang — og er blevet en inspiration for andre paraatleter. Daniel er med til at skubbe til grænsen for, hvad der er muligt at opnå som parasportsudøver. Med hans stålfasthed, er han med til at redefinere, hvordan vi opfatter samspillet mellem mennesket og protesen.'
+        text='Daniel Wagner er en af verdens absolut bedste paraatleter. Han er guldvinder i både sprint og længdespring, og deltager i de største mesterskaber indenfor paraatletik verden over. En ulykke ved en gymnastikopvisning i 2008 i hans hjemby Vejle gjorde, at hans højre ben måtte amputeres, og på et splitsekund blev Daniels liv vendt på hovedet.'
+        secondText='Daniel har med en vilje af stål og disciplin vendt sin modgang til medgang — og er blevet en inspiration for rigtig mange mennesker. Daniel er med til at skubbe til grænsen for, hvad der er muligt at opnå som parasportsudøver. Med hans resultater og person, er han med til at redefinere, hvordan vi opfatter paraatleter i Danmark, og resten af verden.'
       />
       <section className={bio.biography}>
         <span className={bio.teaser}>Biografi</span>
@@ -40,16 +42,16 @@ export default function Bio() {
             <div className={bio.ossurInner}>
               <figure>
                 <Image src={Ossur} width=' 900' height='900' objectFit='cover' objectPosition='100' placeholder='blur'/>
-                <figcaption>Össur Athletic Prosthetic®</figcaption>
+                <figcaption>Daniels protese består af tre dele — et Sahva hylster, et hydraulisk knæ og en Össur fod</figcaption>
               </figure>
             </div>
             <div className={bio.ossurText}>
-              <p>Daniel benytter sig af en avanceret sportsprotese, der er udviklet i samarbejde med Össur. Foden er lavet af kulfiber, og hæftes fast på benstumpen ved hjælp af et vakuum. Når protesen er justeret korrekt, bliver den en forlængelse af Daniels krop — selv ser han det som et samspil mellem menneske og maskine. </p>
+              <p>Daniel benytter sig af en avanceret sportsprotese, der er udviklet i samarbejde med Össur og Sahva. Foden er lavet af kulfiber, og hæftes fast på benstumpen ved hjælp af et vakuum. Når protesen er justeret korrekt, bliver den en forlængelse af Daniels krop — selv ser han det som et samspil mellem menneske og maskine. </p>
             </div>
           </div>
           <div className={bio.world}>
           <div className={bio.worldText}>
-            <p>Daniel har bevist at man ved at udvise disciplin, tro og viljestyrke kan overkomme enhver udfordring. Daniel er både guld-, sølv- og bronzevinder i disciplinerne 100 meter sprint og længdespring, og repræsenterer Danmark ved verdemesterskaberne i parasport, samt de Paralympiske Lege.</p>
+            <p>Daniel har bevist at man ved at udvise disciplin, tro og viljestyrke kan overkomme enhver udfordring. Daniel er både guld-, sølv- og bronzevinder i disciplinerne 100 meter sprint og længdespring, og repræsenterer Danmark ved verdensmesterskaberne i paraatletik, samt de Paralympiske Lege.</p>
           </div>
             <div className={bio.worldInner}>
               <figure>
@@ -60,61 +62,7 @@ export default function Bio() {
           </div>
         </div>
       </section>
-      <Quote text='"Selvfølgelig vil jeg gerne have funktionaliten fra mit gamle ben tilbage, men jeg vil aldrig bytte det, for den person jeg er blevet, og de muligheder jeg har fået."' credits='Fra interview i P3 x viden' />
-      <section className={bio.achievements}>
-        <div className={bio.achievementsInner}>
-          <ul className={bio.list}>
-            <li className={bio.li}>
-              <span className={bio.year}>2012</span>
-              <span className={bio.record}>Bronze, længdespring</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>London, Paralympiske Lege</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2015</span>
-              <span className={bio.record}>Verdensrekord, længdespring</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2016</span>
-              <span className={bio.record}>Bronze, længdespring</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2016</span>
-              <span className={bio.record}>Sølv, 100 m. sprint</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2017</span>
-              <span className={bio.record}>Sølv, 100 m. sprint</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2017</span>
-              <span className={bio.record}>Guld, længdespring</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2019</span>
-              <span className={bio.record}>Guld, længdespring</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-            <li className={bio.li}>
-              <span className={bio.year}>2021</span>
-              <span className={bio.record}>Guld, 100 m. sprint</span>
-              <span className={bio.length}>6,11 m. T42/F42</span>
-              <span className={bio.where}>Qatar, VM i Paraatletik</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <Quote text='"Selvfølgelig vil jeg gerne have funktionaliten fra mit gamle ben tilbage, men jeg vil aldrig bytte det, for den person jeg er blevet til, og de muligheder jeg har skabt for mig selv"' credits='Daniel' />
       <section  className={bio.video}>
         <div className={bio.videoInner}>
           <video
@@ -131,9 +79,10 @@ export default function Bio() {
           <span>Men’s 100m T63 Final — Dubai 2019</span>
         </div>
         <div className={bio.videoText}>
-          <p>Her sætter Daniel en ny personlig rekord i 100 meter sprint ved Dubai World Para Athletics i 2019. Der går et stykke tid før han opdager at han tilmed er kommet først i mål, og altså vinder guld til ham selv og Danmark.</p>
+          <p>100 meter finalen til VM i Dubai i 2019 var et drama uden lige. Daniel blev nærmest kørt ind til 100-meter startstregen i en kørestol med en selvtillid i bund. Men han gravede dybt da det gjaldt, og overraskede alt og alle med sit resultat — inklusiv ham selv</p>
         </div>
       </section>
+      <Achievements />
       <Quote text='"Jeg føler at jeg er lykkes og har rejst mig — kommet stærkere ud på den anden side. Og det synes jeg er smukt, når man har været ude for noget så tragisk, som at miste sit ben som 14-årig."' credits='Fra interview i P3 x viden' />
     </>
   )

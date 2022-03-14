@@ -17,7 +17,7 @@ export default function Home() {
         teaser='Oplev mit foredrag'
         title='Fra sengekanten til verdens-toppen'
         text='Hvad gør man som lovende gymnast når hele livet bliver vendt på hovedet på et splitsekund? Gør ingenting og lade livet passere forbi, eller tage tyren ved hornene og skabe et liv, ingen havde troet på?'
-        secondText='Kom med på en inspirerende og levende rejse i foredraget &apos;Fra sengekanten til verdenstoppen&apos; hvor Daniel Wagner tager dig med lige fra sengekanten på hospitalet til den store scene ved de Paralympiske lege, og hør om alle de udfordringer og muligheder sådan en rejse kaster af sig.'
+        secondText='Kom med på en inspirerende og levende rejse, hvor Daniel Wagner tager dig med lige fra sengekanten på hospitalet til den store scene ved de Paralympiske lege, og hør om alle de udfordringer og muligheder sådan en rejse kaster af sig.'
       />
       <section className={index.excerpt}>
         <div className={index.figure}>

@@ -53,3 +53,29 @@
     color: blue;
   }
 }
+
+.socialList {
+  display: flex;
+  margin-top: 4rem;
+
+  @media (max-width: $m) {
+    margin-top: 3rem;
+  }
+}
+
+.socialLink {
+  align-items: flex-start;
+  display: flex;
+  font-size: 1.2em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+
+  &:hover {
+    color: blue;
+  }
+
+  span {
+    margin-right: 0.25rem;
+  }
+}

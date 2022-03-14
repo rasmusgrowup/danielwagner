@@ -150,6 +150,14 @@
   }
 }
 
+.list {
+  margin-bottom: 6rem;
+}
+
+.list:last-of-type {
+  margin-bottom: 0;
+}
+
 .list .li {
   border-bottom: 1px solid var(--light);
   display: flex;
@@ -170,10 +178,6 @@
   .where {
     flex: 3;
   }
-}
-
-.length {
-  opacity: 0.25;
 }
 
 .where {
