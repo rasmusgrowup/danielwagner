@@ -45,8 +45,10 @@ export default function Hero({ src, fit, position, teaser, title, text, secondTe
         <div className={hero.parallax} ref={parallaxRef}>
           <Image src={src} layout='fill' objectFit={fit} objectPosition={position} quality='100' priority='true' placeholder='blur'/>
         </div>
-        <div className={hero.book} ref={bookRef}>
-          <Link href='mailto:booking@danielwagner.dk'><a>Book mit foredrag</a></Link>
+        <div className={hero.bookWrapper}>
+          <div className={hero.book} ref={bookRef}>
+            <Link href='mailto:dj1leg@gmail.com'><a>Book mit foredrag</a></Link>
+          </div>
         </div>
         <div className={hero.content} ref={contentRef}>
           <span className={`${hero.teaser} child`}>{teaser}</span>

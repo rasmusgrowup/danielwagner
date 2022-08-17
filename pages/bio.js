@@ -15,6 +15,11 @@ import Achievements from '../components/Achievements'
 export default function Bio() {
   return (
     <>
+    <Head>
+      <title>Daniel Wagner | Om Daniels Wagners titler, medaljer og historie</title>
+      <meta property="og:title" content="Daniel Wagner | Om Daniels Wagners titler, medaljer og historie" key="title" />
+      <meta property="og:description" name="description" content="Daniel Wagner er en af verdens absolut bedste paraatleter. Han er guldvinder i både sprint og længdespring, og deltager i de største mesterskaber indenfor paraatletik verden over." key='description'/>
+    </Head>
       <Hero
         src={Daniel}
         fit='cover'
@@ -30,7 +35,7 @@ export default function Bio() {
           <div className={bio.ulykke}>
             <div className={bio.ulykkeInner}>
               <figure>
-                <Image src={Ulykke} width='624' height='351' objectFit='cover' objectPosition='100' placeholder='blur'/>
+                <Image src={Ulykke} width='624' height='351' objectFit='cover' objectPosition='100' placeholder='blur' alt="Daniel Wagner på hospitalet"/>
                 <figcaption>Daniel efter sin ulykke som 14-årig</figcaption>
               </figure>
             </div>
@@ -41,7 +46,7 @@ export default function Bio() {
           <div className={bio.ossur}>
             <div className={bio.ossurInner}>
               <figure>
-                <Image src={Ossur} width=' 900' height='900' objectFit='cover' objectPosition='100' placeholder='blur'/>
+                <Image src={Ossur} width=' 900' height='900' objectFit='cover' objectPosition='100' placeholder='blur' alt="Daniel Wagners protese"/>
                 <figcaption>Daniels protese består af tre dele — et Sahva hylster, et hydraulisk knæ og en Össur fod</figcaption>
               </figure>
             </div>
@@ -55,7 +60,7 @@ export default function Bio() {
           </div>
             <div className={bio.worldInner}>
               <figure>
-                <Image src={Bydgoszcz} width='1000' height='1352' objectFit='cover' objectPosition='left top' placeholder='blur'/>
+                <Image src={Bydgoszcz} width='1000' height='1352' objectFit='cover' objectPosition='left top' placeholder='blur' alt="Daniel Wagner til Tokyo 2020 Paralympics"/>
                 <figcaption>Tokyo 2020 Paralympics</figcaption>
               </figure>
             </div>

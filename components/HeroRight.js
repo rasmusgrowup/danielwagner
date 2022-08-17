@@ -49,15 +49,15 @@ export default function HeroRight({ src, fit, position, teaser, title, text, sec
         </div>
         <div className={hero.contact} ref={contactRef}>
           <div className={hero.link}>
-            <Link href='mailto:kontakt@danielwagner.dk'><a>Mail</a></Link>
+            <Link href='mailto:dj1leg@gmail.com'><a>Mail</a></Link>
             <Image src={Arrow} width='8' height='8'/>
           </div>
           <div className={hero.link}>
-            <Link href='https://instagram.com/daniel1leg'><a target='_blank'>Instagram</a></Link>
+            <Link href='https://instagram.com/daniel1leg' passHref><a target='_blank'>Instagram</a></Link>
             <Image src={Arrow} width='8' height='8'/>
           </div>
           <div className={hero.link}>
-            <Link href='https://instagram.com/daniel1leg'><a target='_blank'>Facebook</a></Link>
+            <Link href='https://www.facebook.com/daniel1leg' passHref><a target='_blank'>Facebook</a></Link>
             <Image src={Arrow} width='8' height='8'/>
           </div>
         </div>

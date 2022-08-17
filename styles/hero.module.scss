@@ -65,7 +65,7 @@
 
 .title {
   margin-bottom: 3vw;
-  font-size: max(36px, 5vw);
+  font-size: max(36px, 4.5vw);
   font-weight: bold;
 
   @media (max-width: $xl) {
@@ -77,6 +77,18 @@
 .text {
   font-size: max(18px, 1.375vw);
   margin-right: 1rem;
+}
+
+@media (min-width: $l) {
+  .bookWrapper {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    max-height: 1025px;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
 }
 
 .book {
